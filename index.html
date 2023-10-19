@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>default arguments</title>
+</head>
+<body>
+    <script>
+        function createUser(login="unknown", email="unknown@unknown.com") {
+            return {
+                login: login,
+                email: email
+            }
+        }
+        console.log(createUser("guest", "jd@hotmail.com"));
+        console.log(createUser("guest"));
+        console.log(createUser());
+    </script>
+</body>
+</html>
